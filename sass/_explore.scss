@@ -1,0 +1,513 @@
+.explore_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:12rem;
+
+
+    &__button {
+
+        padding: 0.3rem;
+        border-radius: 20px;
+        background: #E65C9C;
+        border: 0;
+        color: #6B0772;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+    }
+
+    &__main {
+        text-align:center;
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            padding: 0.8rem;
+            color: $darkBlue;
+        }
+    }
+
+    &__sub {
+        p {
+            font-size: 0.8rem;
+            font-weight: 300;
+            width: 30rem;
+
+            @include breakpoint-down(small) {
+                width: 15rem;
+                text-align: left;
+            }
+
+
+        }
+    }
+
+
+
+
+}
+
+
+.explore {
+
+
+    //card
+    &__container {
+        width: 75%;
+        // place-content:center;
+    }
+
+    &__container_layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, $card-width);
+        grid-auto-rows: $row-increment;
+        justify-content: center;
+        position: relative;
+
+        // grid-gap: 1rem;
+        // grid-template-areas:
+        //     "card1 card2 card3"
+        //     "card4 card5 card6";
+
+        // margin-left: auto;
+        // margin-right: auto;
+        // position: relative;
+
+
+    }
+
+    &__card {
+
+        padding: 0;
+        margin: 15px 10px;
+        border-radius: $card-border_radius;
+        overflow:hidden;
+
+        &_small {
+            grid-row-end: span $card-small;
+
+            @include breakpoint-down(medium) {
+                 grid-row-end: span $card-small;
+     
+            } 
+
+            // @include breakpoint-down(large) {
+            //      grid-row-end: span $card-medium;
+     
+            // }
+
+        }
+
+        &_small2 {
+            grid-row-end: span $card-small2;
+            
+            @include breakpoint-down(medium) {
+                 grid-row-end: span $card-small;
+     
+            }
+            // @include breakpoint-down(large) {
+            //      grid-row-end: span $card-medium;
+     
+            // } 
+
+        }
+
+        &_medium {
+            grid-row-end: span $card-medium;
+
+            @include breakpoint-down(medium) {
+                 grid-row-end: span $card-small ;
+     
+            } 
+            // @include breakpoint-down(large) {
+            //      grid-row-end: span $card-medium;
+     
+            // }
+
+        }
+        &_medium2 {
+            grid-row-end: span $card-medium2;
+
+            @include breakpoint-down(medium) {
+                 grid-row-end: span $card-small !important;
+     
+            } 
+            // @include breakpoint-down(large) {
+            //      grid-row-end: span $card-medium;
+     
+            // }
+
+        }
+
+        &_large {
+            grid-row-end: span $card-large;
+
+            @include breakpoint-down(medium) {
+                 grid-row-end: span $card-small;
+     
+            } 
+            // @include breakpoint-down(xlarge) {
+            //      grid-row-end: span $card-small !important;
+     
+            // }
+
+        }
+
+         
+         
+
+
+        &1 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/1.jpg');
+            background-size: cover;
+            padding: 10rem 0 0;
+            margin-bottom: 0rem;
+           
+            @include breakpoint-down(large) {
+                  
+                    padding: 11rem 0 0 ;
+   
+                } 
+
+             @include breakpoint-down(medium) {
+                  
+                    padding: 7rem 0 0 ;
+   
+                }   
+
+
+        }
+
+
+        &2 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/2.jpeg');
+            background-size: cover;
+
+            padding: 16rem 0 0 ;
+            margin-bottom: 0rem;
+           
+
+                @include breakpoint-down(xlarge) {
+                    margin-bottom:1rem;
+                    padding: 11rem 0 0 ;
+   
+                }
+
+                @include breakpoint-down(medium) {
+                  
+                    padding: 7rem 0 0 ;
+   
+                }
+
+        }
+
+        &3 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/3.jpeg');
+            background-size: cover;
+            padding: 12rem 0 0;
+
+             @include breakpoint-down(xlarge) {
+                    padding: 11rem 0 0 ;
+   
+                }
+                @include breakpoint-down(medium) {
+                  
+                    padding: 7rem 0 0 ;
+   
+                }
+           
+        }
+
+        &4 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/4.jpeg');
+            background-size: cover;
+            margin-bottom: 0.8rem;
+            margin-top: 1rem !important;
+            padding: 11rem 0 0;
+
+             @include breakpoint-down(xlarge) {
+                    margin-top: 1rem !important;
+                    padding: 11rem 0 0;
+                    margin-bottom: 0rem;
+
+
+                    
+                }
+                @include breakpoint-down(medium) {
+                  
+                    padding: 7rem 0 0 ;
+   
+                }
+
+
+           
+        }
+
+        &5 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/5.jpg');
+            background-size: cover;
+            padding: 9.2rem 0 0;
+            margin-top: 0rem !important;
+           
+           @include breakpoint-down(xlarge) {
+                    padding: 12rem 0 0 ;
+   
+                }
+                @include breakpoint-down(medium) {
+                  
+                    padding: 8rem 0 0 ;
+   
+                }
+        }
+
+        &6 {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/6.jpg');
+            background-size: cover;
+            padding: 6.5rem 0 0;
+            margin-top:1rem !important;
+    
+
+             @include breakpoint-down(large) {
+                    // margin-top:-1rem;
+                    // padding: 12rem 0 0 ;
+       
+                }
+                @include breakpoint-down(medium) {
+                  
+                    padding: 7rem 0 0 ;
+   
+                }
+           
+        }
+
+    }
+
+    &__card-content {
+        // padding-bottom: 1em;
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        font-size: 0.75rem;
+
+    }
+
+
+
+    &__card-title {
+        font-size: 1rem;
+        font-weight: 600;
+        width: max-content;
+        margin-bottom: 0rem !important;
+        color:rgba(255, 255, 255, 1);
+
+        // &::after {
+        //     transform: scaleX(0);
+        //     transition: transform 500ms ease;
+        // }
+    }
+
+    &__card-body {
+        color: rgba(255, 255, 255, .85);
+        // margin-top: -0rem; 
+
+       
+    }
+
+
+    // &__card-title::after {
+    //     transform: scaleX(1);
+    // }
+
+}
+
+
+//newwwww
+
+// .explore_heading {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+
+
+//     &__button {
+
+//         padding: 0.3rem;
+//         border-radius: 20px;
+//         background: #E65C9C;
+//         border: 0;
+//         color: #6B0772;
+//         cursor: pointer;
+//         text-transform: uppercase;
+//         font-size: 0.7rem;
+//     }
+
+//     &__main {
+//         h3 {
+//             font-size: 1.5rem;
+//             font-weight: 800;
+//             padding: 0.8rem;
+//             color: $darkBlue;
+//         }
+//     }
+
+//     &__sub {
+//         p {
+//             font-size: 0.8rem;
+//             font-weight: 300;
+//             width: 30rem;
+
+//             @include breakpoint-down(small) {
+//                 width: 15rem;
+//                 text-align: left;
+//             }
+
+
+//         }
+//     }
+
+
+
+
+// }
+
+
+// .explore {
+
+
+//     //card
+//     &__container {
+//         width: 80%;
+//         max-width: 100rem;
+//                 // place-content:center;
+//     }
+
+//     &__container_layout {
+//         display: grid;
+//         // grid-template-columns: 1fr 1fr 1fr;
+//         grid-template-rows: auto;
+//         grid-gap: 1rem;
+//         grid-template-areas:
+//             "card1 card2 card3"
+//             "card4 card5 card6";
+
+//         margin-left: auto;
+//         margin-right: auto;
+
+//     }
+
+//     &__card {
+
+
+//         &1 {
+//             grid-area: card1;
+//             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/1.jpg');
+//             color: whitesmoke;
+//             background-size: cover;
+//             padding: 10rem 0 0;
+//             max-width: 35ch;
+//             border-radius: 10px;
+//             overflow: hidden;
+//             transition: transform 500ms ease;
+
+
+//         }
+
+
+//         &2 {
+//             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/2.jpeg');
+//             grid-area: card2;
+//             background-size: cover;
+//             padding: 10rem 0 0;
+//             max-width: 35ch;
+//             min-height: 20rem;
+//             border-radius: 10px;
+//             overflow: hidden;
+//             transition: transform 500ms ease;
+//         }
+
+//         &3 {
+//             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/3.jpeg');
+//             grid-area: card3;
+//             background-size: cover;
+//             padding: 10rem 0 0;
+//             max-width: 35ch;
+//             border-radius: 10px;
+//             overflow: hidden;
+//             transition: transform 500ms ease;
+//         }
+
+//         &4 {
+//             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/4.jpeg');
+//             grid-area: card4;
+//             background-size: cover;
+//             padding: 10rem 0 0;
+//             max-width: 35ch;
+//             border-radius: 10px;
+//             overflow: hidden;
+//             transition: transform 500ms ease;
+//         }
+
+//         &5 {
+//             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/5.jpg');
+//             grid-area: card5;
+//             background-size: cover;
+//             padding: 10rem 0 0;
+//             max-width: 35ch;
+//             border-radius: 10px;
+//             overflow: hidden;
+//             transition: transform 500ms ease;
+//         }
+
+//         &6 {
+//             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('./images/6.jpg');
+//             grid-area: card6;
+//             background-size: cover;
+//             padding: 10rem 0 0;
+//             max-width: 35ch;
+//             border-radius: 10px;
+//             overflow: hidden;
+//             transition: transform 500ms ease;
+//         }
+
+//     }
+
+//     &__card-content {
+//         padding-bottom: 0em;
+//         padding-top: 1.5em;
+//         padding-left: 1.5em;
+//         padding-right: 1.5em;
+//         font-size: 0.8rem;
+//         transform: translateY(85%);
+
+//     }
+
+//     &__card:hover,
+//     &__card-content {
+//         transform: translateY(0);
+
+//     }
+
+//     &__card-title {
+//         font-size: 1rem;
+//         font-weight: 600;
+//         width: max-content;
+//         margin-bottom: 0rem !important;
+
+//         // &::after {
+//         //     transform: scaleX(0);
+//         //     transition: transform 500ms ease;
+//         // }
+//     }
+
+//     &__card-body {
+//         color: rgba(255, 255, 255, .85)
+//     }
+
+
+//     // &__card-title::after {
+//     //     transform: scaleX(1);
+//     // }
+
+// }
