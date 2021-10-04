@@ -1,0 +1,436 @@
+.card {
+
+    &__container {
+
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(to right, #283E51, #141E30);
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80vw;
+        height: 25rem;
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        color: whitesmoke;
+
+        @include breakpoint-down(medium) {
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            height: max-content;
+            padding: 1rem 1rem;
+
+
+        }
+
+        @include breakpoint-down(small) {
+            flex-direction: column;
+
+
+        }
+
+
+    }
+
+    &__container_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-right: 5rem;
+
+        @include breakpoint-down(large) {
+            width: 30rem;
+
+        }
+
+        @include breakpoint-down(small) {
+
+            position: relative;
+            height: 15rem;
+            width: auto;
+            // margin-top: 15rem;
+            margin-right: 0rem;
+
+
+        }
+
+
+
+
+        // &-hero {
+
+        img {
+            // object-fit: contain;
+            // position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 8px;
+            height: 20rem;
+            width: auto;
+
+            @include breakpoint-down(large) {
+                height: 15rem;
+                width: auto;
+                text-align: center;
+
+            }
+
+            @include breakpoint-down(small) {
+                height: 15rem;
+                width: auto;
+                margin-right: 0rem;
+
+
+            }
+
+            // }
+        }
+    }
+
+    &__container_content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 0rem;
+
+        @include breakpoint-down(large) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-left: 0rem;
+
+        }
+
+        @include breakpoint-down(small) {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0rem;
+
+        }
+
+        &-text {
+            padding: 1rem;
+
+            .fa-quote-right:before {
+                color: #E65C9C !important;
+                font-size: larger;
+
+
+            }
+
+            p {
+                font-size: 0.8rem;
+                font-weight: 300;
+                width: 20rem;
+                margin-bottom: 1.5rem;
+
+                @include breakpoint-down(small) {
+                    width: 12rem;
+                    text-align: left;
+                }
+
+
+            }
+
+            h4 {
+                color: whitesmoke;
+                font-weight: 300;
+                font-size: .8rem;
+                margin-top: -1rem;
+
+                @include breakpoint-down(small) {
+                    margin-top: -1rem;
+                    text-align: left;
+
+                }
+
+            }
+        }
+
+
+
+        &-side-text {
+            text-align: left;
+            width: 15rem;
+            font-size: .8rem;
+            font-weight: 200;
+            margin-left: 4rem;
+            padding: 1rem;
+
+
+            @include breakpoint-down(large) {
+                flex-wrap: wrap;
+                margin-left: 0rem;
+
+            }
+
+            h3 {
+                font-weight: 900;
+                color: whitesmoke;
+                margin-top: 0.5rem;
+
+                @include breakpoint-down(small) {
+                    margin-left: 0.6rem;
+                }
+            }
+
+            p {
+                width: 15rem;
+                margin-bottom: 0.5rem;
+
+                @include breakpoint-down(small) {
+                    width: 13rem;
+                    margin-left: .6rem;
+                }
+
+            }
+
+            a {
+                text-decoration: none;
+                color: #E65C9C;
+                font-weight: 400;
+
+                @include breakpoint-down(small) {
+                    margin-left: .6rem;
+                }
+            }
+
+            .fa-arrow-right:before {
+                color: #E65C9C;
+
+
+            }
+
+            @include breakpoint-down(small) {
+                width: 15rem;
+            }
+
+        }
+    }
+
+
+}
+
+.info {
+
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+
+
+        p {
+            font-size: 0.8rem;
+            font-weight: 300;
+            width: 30rem;
+            margin-right: 2rem;
+
+            @include breakpoint-down(small) {
+                width: 15rem;
+            }
+
+            @include breakpoint-down(medium) {
+                width: 15rem;
+            }
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #E65C9C;
+            font-weight: 400;
+            margin-top: -1.5rem;
+
+            @include breakpoint-down(small) {
+                margin-left: 0rem;
+                margin-bottom: 1rem;
+
+            }
+
+            @include breakpoint-down(medium) {
+                margin-left: 0rem;
+                margin-bottom: 1rem;
+
+            }
+        }
+    }
+
+    &__icon {
+        margin-left: -1rem;
+        margin-right: 1rem;
+        background: linear-gradient(to right, #E65C9C, #6B0772);
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 50%;
+        padding: 0.4rem;
+
+
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+
+        &1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+            @include breakpoint-down(small) {
+                margin-left: 0rem;
+                margin-bottom: 0rem;
+
+            }
+
+            @include breakpoint-down(medium) {
+                margin-left: 0rem;
+                margin-bottom: 0rem;
+
+            }
+
+        }
+
+        &2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+
+            @include breakpoint-down(small) {
+                margin-left: 0rem;
+                margin-bottom: 0rem;
+
+            }
+
+            @include breakpoint-down(medium) {
+                margin-left: 0rem;
+                margin-bottom: 0rem;
+
+            }
+
+        }
+
+        &3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            // margin-right: 0.2rem;
+
+            @include breakpoint-down(small) {
+                margin-left: 0rem;
+                margin-bottom: 0rem;
+
+            }
+
+            @include breakpoint-down(medium) {
+                margin-left: 0rem;
+                margin-bottom: 0rem;
+
+            }
+
+        }
+    }
+
+    &__description {
+        font-size: 0.875rem;
+        margin-bottom: 0rem;
+        min-width: 15rem;
+
+        @include breakpoint-down(small) {
+            margin-left: 0rem;
+            margin-bottom: 0rem;
+
+        }
+
+        p {
+            margin-left: 0rem;
+            margin-bottom: 0rem;
+            margin-top: 0.5rem;
+
+            @include breakpoint-down(small) {
+                width: 14rem;
+            }
+
+            @include breakpoint-down(medium) {
+                width: 14rem;
+            }
+        }
+
+    }
+
+
+
+
+}
+
+
+.info-container {
+    max-width: 55rem;
+    max-height: 25rem;
+    ;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    @include breakpoint-down(medium) {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 1.5rem;
+
+
+    }
+
+    &--pall {
+        padding-top: 4.375rem;
+        padding-right: 1.5rem;
+        padding-bottom: 4.375rem;
+        padding-left: 1.5rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+
+        }
+    }
+
+}
+
+.fa-plane:before {
+    font-size: initial;
+    color: white
+}
+
+.fa-handshake:before {
+    font-size: initial;
+    color: white
+}
+
+.fa-clock:before {
+    font-size: initial;
+    color: white
+}
+
+.fa-arrow-right:before {
+    margin-left: 0.4rem;
+}
