@@ -28,9 +28,9 @@
 
     &__text {
 
-        // text-align:center;
-
-
+        @include breakpoint-down(small) {
+            margin-top:1rem;
+        }
 
         &_1 {
             font-size: 3rem;
@@ -103,7 +103,7 @@
 
             @include breakpoint-down(small) {
                 margin-left: 0rem;
-                width: 18rem;
+                width: 19rem;
             }
 
         }
