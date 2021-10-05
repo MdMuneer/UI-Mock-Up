@@ -257,6 +257,10 @@ p {
       order: 2;
       clip-path: polygon(13% 0, 100% 0%, 100% 99%, 0 99%); } }
 
+@media (max-width: 39.9375em) {
+  .main__text {
+    margin-top: 1rem; } }
+
 .main__text_1 {
   font-size: 3rem;
   font-weight: 800;
