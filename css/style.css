@@ -377,12 +377,12 @@ p {
   color: #6B0772; }
 
 .fa-credit-card:before {
-  font-size: smaller !important; }
+  font-size: smaller ; }
 
 .fa-clock:before {
-  font-size: larger !important;
+  font-size: larger ;
   padding-left: 0.1rem;
-  color: #6B0772 !important; }
+  color: #6B0772 ; }
 
 .card__container {
   display: flex;
