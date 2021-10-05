@@ -372,10 +372,13 @@ p {
   padding-left: 0.1rem;
   color: #6B0772; }
 
+.fa-credit-card:before {
+  font-size: smaller !important; }
+
 .fa-clock:before {
-  font-size: larger;
+  font-size: larger !important;
   padding-left: 0.1rem;
-  color: #6B0772; }
+  color: #6B0772 !important; }
 
 .card__container {
   display: flex;
@@ -464,8 +467,8 @@ p {
       margin-bottom: 1.5rem; }
       @media (max-width: 39.9375em) {
         .card__container_content-text p {
-          width: 12rem;
-          text-align: left; } }
+          width: 12.5rem;
+          text-align: justify; } }
     .card__container_content-text h4 {
       color: whitesmoke;
       font-weight: 300;
@@ -488,25 +491,28 @@ p {
         margin-left: 0rem; } }
     .card__container_content-side-text h3 {
       font-weight: 900;
+      font-size: 1.1rem;
       color: whitesmoke;
-      margin-top: 0.5rem; }
+      margin-top: 0.5rem;
+      margin-bottom: -0.4rem; }
       @media (max-width: 39.9375em) {
         .card__container_content-side-text h3 {
-          margin-left: 0.6rem; } }
+          margin-left: 0.4rem; } }
     .card__container_content-side-text p {
       width: 15rem;
       margin-bottom: 0.5rem; }
       @media (max-width: 39.9375em) {
         .card__container_content-side-text p {
-          width: 13rem;
-          margin-left: .6rem; } }
+          width: 12.1rem;
+          margin-left: .4rem;
+          text-align: justify; } }
     .card__container_content-side-text a {
       text-decoration: none;
       color: #E65C9C;
       font-weight: 400; }
       @media (max-width: 39.9375em) {
         .card__container_content-side-text a {
-          margin-left: .6rem; } }
+          margin-left: .4rem; } }
     .card__container_content-side-text .fa-arrow-right:before {
       color: #E65C9C; }
     @media (max-width: 39.9375em) {
@@ -651,7 +657,7 @@ p {
   font-size: initial;
   color: white; }
 
-.fa-clock:before {
+.fa-history:before {
   font-size: initial;
   color: white; }
 
