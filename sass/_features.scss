@@ -1,23 +1,24 @@
-.features{
-      display :flex;
-      // text-align: center;
-      flex-direction: column;
-      padding-top:5rem;
-      padding-left:1rem;
-      margin-left:4rem;
-      margin-right:4rem;
-      // max-width:60vw;
-      justify-content: center !important;
-      align-items:  center !important;
+.features {
+    display: flex;
+    // text-align: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    // max-width:60vw;
+    justify-content: center !important;
+    align-items: center !important;
 
-      @include breakpoint-down(small) {
-        margin-left:0rem !important;;
-        margin-right:0rem;
+    @include breakpoint-down(small) {
+        margin-left: 0rem !important;
+        ;
+        margin-right: 0rem;
         padding-top: 0rem;
 
     }
 
-     
+
 
 }
 
@@ -52,7 +53,7 @@
 
         @include breakpoint-up(medium) {
             flex: 0 0 50%;
-             
+
         }
 
         @include breakpoint-up(large) {
@@ -65,7 +66,7 @@
 
 
         @include breakpoint-up(large) {
-        margin-bottom: 0.875rem;
+            margin-bottom: 0.875rem;
         }
     }
 
@@ -78,15 +79,16 @@
 
         @include breakpoint-up(large) {
             font-size: 1.5rem;
-          margin-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
         }
+
     }
 
     &__description {
         font-size: 0.875rem;
         line-height: 1.5;
-        max-width:28rem;
-        min-width:15rem;
+        max-width: 28rem;
+        min-width: 15rem;
     }
 }
 
@@ -94,15 +96,19 @@
 .fa,
 .fas {
     font-size: large;
-    padding-left:0.1rem;
-    color:#6B0772;
+    padding-left: 0.1rem;
+    color: #6B0772;
+
+}
+
+.fa-credit-card:before {
+    font-size: smaller !important;
 
 }
 
 .fa-clock:before {
-    font-size: larger;
-    padding-left:0.1rem;
-    color:#6B0772;
+    font-size: larger !important;
+    padding-left: 0.1rem;
+    color: #6B0772 !important;
 
 }
-
